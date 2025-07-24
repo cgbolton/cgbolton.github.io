@@ -1,7 +1,7 @@
 ---
 layout: under_construction
 permalink: /
-title: "Under Construction"
+title: "CG Bolton Academic Hub"
 redirect_from: 
   - /about/
   - /about.html
