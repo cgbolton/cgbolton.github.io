@@ -1,5 +1,5 @@
 ---
 layout: under_construction
-permalink: /
+permalink: yourusername.github.io/
 title: Main Title
 ---
