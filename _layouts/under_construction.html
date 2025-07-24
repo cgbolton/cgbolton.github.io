@@ -29,7 +29,7 @@ layout: null
         /* Styling for the "Under Construction." text */
         .construction-text {
             font-size: 2.5em; /* Large font size */
-            margin-bottom: 20px; /* Space between text and icon */
+            margin-bottom: 0px; /* Reduced space to 0px */
             font-weight: 600; /* Slightly bolder */
             line-height: 1.2;
         }
@@ -50,6 +50,21 @@ layout: null
             text-decoration: none;
         }
 
+        /* Styling for the email link */
+        .email-link {
+            font-family: 'monospace', 'Courier New', Courier, sans-serif; /* Monospace font for textt style */
+            font-size: 1.1em; /* Slightly larger than default for readability */
+            color: #555; /* Darker gray for distinction */
+            text-decoration: none; /* Remove default underline */
+            margin-top: 0px; /* Reduced space to 0px */
+            margin-bottom: 15px; /* Space between email and ORCID icon */
+            display: block; /* Ensure it takes its own line and centers */
+        }
+
+        .email-link:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
         /* Responsive adjustments */
         @media (max-width: 600px) {
             .construction-text {
@@ -58,6 +73,9 @@ layout: null
             .orcid-icon {
                 font-size: 2.5em;
             }
+            .email-link {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -65,8 +83,36 @@ layout: null
     <div class="construction-text">
         CG Bolton
     </div>
+    <!-- Container for the email link -->
+    <div class="email-container">
+        <a id="emailLink" class="email-link" href="#"></a>
+    </div>
     <a href="https://orcid.org/0000-0002-2079-9134" target="_blank" rel="noopener noreferrer" class="orcid-link">
         <i class="fab fa-orcid orcid-icon"></i>
     </a>
+
+    <script>
+        // Simple JavaScript obfuscation for the email address
+        // This makes it slightly harder for basic bots to scrape the email directly from the HTML source.
+        document.addEventListener('DOMContentLoaded', function() {
+            // Using less obvious variable names and splitting the strings
+            const p1 = 'ch';
+            const p2 = 'ris';
+            const d1 = 'bo'
+            const d2 = 'lt';
+            const d3 = 'onh';
+            const d4 = 'ub.c';
+            const d5 = 'om';
+
+            // Using nondescript variable names for assembled parts
+            const r = p1 + p2;
+            const k = d1 + d2 + d3 + d4 + d5;
+            
+            const z = r + '@' + k; // Final assembled email
+            const lel = document.getElementById('emailLink');
+            lel.href = 'mailto:' + z;
+            lel.textContent = z;
+        });
+    </script>
 </body>
 </html>
