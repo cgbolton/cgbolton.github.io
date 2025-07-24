@@ -1,5 +1,5 @@
 ---
 layout: under_construction
-permalink: yourusername.github.io/
+permalink: cgbolton.github.io/
 title: Main Title
 ---
