@@ -1,5 +1,9 @@
 ---
 layout: under_construction
-permalink: cgbolton.github.io/
-title: Main Title
+permalink: /
+title: "Under Water"
+author_profile: false
+redirect_from: 
+  - /about/
+  - /about.html
 ---
