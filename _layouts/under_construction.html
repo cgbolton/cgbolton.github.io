@@ -92,23 +92,21 @@ layout: null
     </a>
 
     <script>
-        // Simple JavaScript obfuscation for the email address
-        // This makes it slightly harder for basic bots to scrape the email directly from the HTML source.
+        
         document.addEventListener('DOMContentLoaded', function() {
-            // Using less obvious variable names and splitting the strings
-            const p1 = 'ch';
-            const p2 = 'ris';
-            const d1 = 'bo'
-            const d2 = 'lt';
-            const d3 = 'onh';
+            
             const d4 = 'ub.c';
+            const d2 = 'lt';
+            const p2 = 'ris';
+            const d3 = 'onh';
             const d5 = 'om';
+            const p1 = 'ch';
+            const d1 = 'bo'
 
-            // Using nondescript variable names for assembled parts
             const r = p1 + p2;
             const k = d1 + d2 + d3 + d4 + d5;
             
-            const z = r + '@' + k; // Final assembled email
+            const z = r + '@' + k;
             const lel = document.getElementById('emailLink');
             lel.href = 'mailto:' + z;
             lel.textContent = z;
