@@ -1,4 +1,5 @@
 ---
+layout: under_construction
 permalink: /
 title: "Under Construction"
 author_profile: true
