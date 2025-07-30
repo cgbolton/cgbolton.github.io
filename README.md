@@ -2,8 +2,8 @@
 
 ### Email
 
-:envelope: **Primary:** [chris@boltonhub.com](mailto:chris@boltonhub.com)
-:envelope: **Academic:** [boltonc@unimelb.edu.au](mailto:boltonc@unimelb.edu.au)
+[![email primary](https://img.shields.io/badge/Personal-chris%40boltonhub.com-white?style=for-the-badge&logo=gmail&logoColor=white)](mailto:chris@boltonhub.com)
+[![email academic](https://img.shields.io/badge/Institute-boltonc%40unimelb.edu.au-white?style=for-the-badge&logo=gmail&logoColor=white)](mailto:boltonc@unimelb.edu.au)
 
 ### Links
 
