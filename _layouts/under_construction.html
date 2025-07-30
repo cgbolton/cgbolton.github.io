@@ -7,8 +7,10 @@ layout: null
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CG Bolton</title>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css"/>
+
     <style>
         /* Apply a very light gray background to the entire page */
         body {
@@ -34,20 +36,34 @@ layout: null
             line-height: 1.2;
         }
 
-        /* Styling for the ORCID icon */
-        .orcid-icon {
-            color: #A6CE39; /* Official ORCID green */
+        /* Styling for all academic icons */
+        .academic-icon { /* New general class for all academic icons */
             font-size: 3em; /* Large icon size */
             transition: transform 0.2s ease-in-out; /* Smooth hover effect */
         }
 
-        .orcid-icon:hover {
+        .academic-icon:hover {
             transform: scale(1.1); /* Slightly enlarge on hover */
         }
 
+        /* Specific colors for each icon */
+        .orcid-icon-color {
+            color: #A6CE39; /* Official ORCID green */
+        }
+
+        .google-scholar-icon-color {
+            color: #4285F4; /* Google Scholar blue */
+        }
+
+        .arxiv-icon-color {
+            color: #B31B1B; /* arXiv maroon */
+        }
+
         /* Ensure the link itself doesn't have default text decoration */
-        .orcid-link {
+        .profile-link { /* General class for all profile links */
             text-decoration: none;
+            margin: 0 10px; /* Add some horizontal space between icons */
+            display: inline-block; /* Allows margins and keeps them on one line */
         }
 
         /* Styling for the email link */
@@ -57,7 +73,7 @@ layout: null
             color: #555; /* Darker gray for distinction */
             text-decoration: none; /* Remove default underline */
             margin-top: 0px; /* Reduced space to 0px */
-            margin-bottom: 15px; /* Space between email and ORCID icon */
+            margin-bottom: 15px; /* Space between email and icons */
             display: block; /* Ensure it takes its own line and centers */
         }
 
@@ -70,11 +86,14 @@ layout: null
             .construction-text {
                 font-size: 1.8em;
             }
-            .orcid-icon {
+            .academic-icon { /* Apply to all academic icons */
                 font-size: 2.5em;
             }
             .email-link {
                 font-size: 0.9em;
+            }
+            .profile-link {
+                margin: 0 5px; /* Less space on smaller screens */
             }
         }
     </style>
@@ -83,18 +102,24 @@ layout: null
     <div class="construction-text">
         CG Bolton
     </div>
-    <!-- Container for the email link -->
     <div class="email-container">
         <a id="emailLink" class="email-link" href="#"></a>
     </div>
-    <a href="https://orcid.org/0000-0002-2079-9134" target="_blank" rel="noopener noreferrer" class="orcid-link">
-        <i class="fab fa-orcid orcid-icon"></i>
-    </a>
+
+    <div class="profile-icons-container">
+        <a href="https://scholar.google.com/citations?user=9DisHH4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="profile-link">
+            <i class="ai ai-google-scholar-square academic-icon google-scholar-icon-color"></i>
+        </a>
+        <a href="https://orcid.org/0000-0002-2079-9134" target="_blank" rel="noopener noreferrer" class="profile-link">
+            <i class="ai ai-orcid academic-icon orcid-icon-color"></i>
+        </a>
+        <a href="https://arxiv.org/a/0000-0002-2079-9134" target="_blank" rel="noopener noreferrer" class="profile-link">
+            <i class="ai ai-arxiv academic-icon arxiv-icon-color"></i>
+        </a>
+        </div>
 
     <script>
-        
         document.addEventListener('DOMContentLoaded', function() {
-            
             const d4 = 'ub.c';
             const d2 = 'lt';
             const p2 = 'ris';
